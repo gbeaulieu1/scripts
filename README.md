@@ -1,2 +1,2 @@
 # shellscripttest
-# check if script updates labels
+check if script updates labels
