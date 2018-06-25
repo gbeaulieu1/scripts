@@ -65,7 +65,7 @@ read REPO
 REPO_USER=$(echo "$REPO" | cut -f1 -d /)
 REPO_NAME=$(echo "$REPO" | cut -f2 -d /)
 
-# Get all lables
+# Get all labels
 labels=$(curl --user "$USER:$PASS" "https://api.github.com/repos/"$REPO_USER"/"$REPO_NAME"/labels" | jsonValue name)
 
 if [[ $* == *--nodelete* ]]; then
