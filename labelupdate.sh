@@ -75,7 +75,7 @@ if [[ $* == *--nodelete* ]]; then
 		exit	
 	else
 		echo 'Running without resetting labels'
-		delete
+		add_defaults
 	fi
 else
 	delete
